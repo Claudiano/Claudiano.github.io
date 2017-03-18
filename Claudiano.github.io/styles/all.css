@@ -1,0 +1,49 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	background-image: linear-gradient(to bottom, #006064, white)
+
+}
+
+header{
+	/*background-color: #006064;*/
+	text-align: center;
+	padding: 25px;
+	color: white;
+	font-family: 'Noto Sans', sans-serif;
+	
+}
+
+	header .profile-picture{
+		width: 125px;
+		height: 125px;
+		background-color: white;
+		border-radius: 100%;
+
+	}
+
+section{
+	background: #E0F7FA;
+	border-radius: 25px;
+	padding: 15px;
+	margin: 25px;
+	font-family: 'Noto Sans', sans-serif;
+}
+	section .title{
+		color: 
+	}
+
+	section .content{
+
+	}
+
+footer{
+	background-color: #00838F;
+	text-align: center;
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
