@@ -1,63 +1,37 @@
 <!DOCTYPE html>
 
-<html>
+<html ng-app="sitePessoal">
 	<head>
 		<meta charset="utf-8">
 		<title>Claudiano Sampaio</title>
-		<link href="style.css" rel="stylesheet" >
+		<link href="styles/all.css" rel="stylesheet" >
 		<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	</head>
-	<body>
+	<body ng-controller="mainController">
 
 		<header>
-			<img id="imgCabecalho" class="profile-picture">
-			<h1 id="nomeCabecalho"></h1>
-			<h2 id="cargoCabecalho"></h2>	
+			<img ng-src="{{ foto }}" class="profile-picture">
+			<h1> {{ nome }} </h1>
+			<h2> {{ cargo }} </h2>	
 		</header>
 		
-		<section>
-			<div>
-				<h1 class="title">Resumo</h1>
-				<div class="content">
-					<p>Graduando do curso de Sistemas de Informações na instituição Unifacisa. 
-					</p>
-				</div>
-			</div>
-		</section>
+		<ng-view></ng-view>
 
-		<section>
-			<div>
-				<h1 class="title">Habilidades</h1>
-				<div class="content">
-					<p>
-						<ul>
-							<li>C/C++</li>
-							<li>Java</li>
-							<li>Python</li>
-							<li>OpenCv</li>
-						</ul>
-					</p>
-				</div>
-			</div>
-
-		</section>
-
-		<section>
-			<div>
-				<h1 class="title">Meu historico</h1>
-				<div class="content">
-					<p>
-						meu historico de atividades
-					</p>
-				</div>
-			</div>
-		</section>
-		
 		<footer>
-			Copyright &copy; Claudiano Sampaio - 2017 
+			Copyright &copy; Claudiano Sampaio - {{ ano }}
 		</footer>
-		<script src="script.js"></script>
+
+		<!-- Libraries -->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+
+		<!-- Scripts -->
+		<script src="scripts/app.js"></script>
+		<script src="scripts/app.config.js"></script>
+
 	</body>
 </html>
